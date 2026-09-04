@@ -13,9 +13,8 @@ Starter Express API for the Claude Code course projects.
 ## Conventions
 - Use `node --test` for tests, not external frameworks like Jest or Mocha.
 - Put all data access logic in `db/store.js`, not inside route handlers.
-- Create one route file per resource in `routes/`.
 
 ## Architecture
 - **Entry point**: `server.js` starts the Express API.
 - **Routing**: One route file per resource in `routes/`.
-- **Data Access**: All data operations go through `db/store.js`.
+- **Data Access**: All data operations are centralized in `db/store.js`.
